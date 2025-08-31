@@ -20,6 +20,7 @@ function App() {
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/product/:productId" element={<ProductPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<HomePage />} />
           </Routes>
         </Layout>
       </Router>
