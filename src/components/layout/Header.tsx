@@ -45,7 +45,10 @@ export const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className={cn(
+            "hidden md:flex items-center",
+            isRTL ? "space-x-reverse space-x-10" : "space-x-8"
+          )}>
             {navigation.map((item) => (
               <Link
                 key={item.name}
