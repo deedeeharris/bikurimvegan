@@ -11,7 +11,7 @@ import { ContactPage } from '@/pages/ContactPage';
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename="/bikurimvegan">
         <ScrollToTop />
         <Layout>
           <Routes>

@@ -31,7 +31,7 @@ export const useProductsFromCSV = () => {
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const response = await fetch('/data/products.csv');
+        const response = await fetch('/bikurimvegan/data/products.csv');
         const csvText = await response.text();
 
         Papa.parse<CSVProduct>(csvText, {
