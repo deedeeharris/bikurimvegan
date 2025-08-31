@@ -46,9 +46,14 @@ export const Footer = () => {
           flex flex-col sm:flex-row justify-between items-center pt-8 mt-8 border-t
           ${isRTL ? 'sm:flex-row-reverse' : ''}
         `}>
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Bikurim. {t('allRightsReserved')}.
-          </p>
+          <div className="flex flex-col items-start">
+            <p className="text-sm text-muted-foreground">
+              © {new Date().getFullYear()} Bikurim. {t('allRightsReserved')}.
+            </p>
+            <p className="text-xs text-muted-foreground/70 mt-1">
+              🚀 Deployed via GitHub Pages • Built on {new Date().toLocaleDateString()}
+            </p>
+          </div>
           <div className={`
             flex space-x-4 mt-4 sm:mt-0
             ${isRTL ? 'space-x-reverse' : ''}
